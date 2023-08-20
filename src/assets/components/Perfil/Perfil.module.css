@@ -1,0 +1,40 @@
+.header{
+  background-color:var(--corPrincipal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  padding: 180px 0 40px;
+  margin-bottom: 80px;
+}
+.avatar{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid var(--corSecundaria);
+}
+.name{
+  font-size: 18px;
+  color: var(--corSecudaria);
+}
+:root{
+  --corPrincipal:#f9ca24;
+  --corSecudaria:#111;
+}
+.inserirUsuario{
+  
+  display: block;
+ padding: 16px;
+  font-size: 16px;
+  background-color: var(--corPrincipal);
+}
+.inserirUsuario b{
+margin-right: 10px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+  outline:white ;
+  border-color:white;
+  padding: 5px;
+  border-radius: 5px;
+}
