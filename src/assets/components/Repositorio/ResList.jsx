@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-
+import PropTypes from 'prop-types';
 import styles from './ReposList.module.css'
 
 const ResList = ({nomeUsuario}) => {
 
   const [res, setRes]= useState([]);
   const [estacarregando, setEstacarregando]= useState(true);
-  
+  ResList.propTypes = {
+    nomeUsuario: PropTypes.string.isRequired, 
+  };
    useEffect(()=>{
     setEstacarregando(true)
     fetch(`https://api.github.com/users/${nomeUsuario}/repos`)
