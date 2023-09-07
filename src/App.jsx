@@ -1,5 +1,5 @@
- import { useState } from "react"
- 
+import { useState } from "react"
+
 
 import Perfil from "./assets/components/perfil"
 import styles from "../src/assets/components/Perfil/Perfil.module.css"
@@ -22,6 +22,7 @@ function App() {
     <>
      <Perfil nomeUsuario={nomeUsuario}/>
   <RespList nomeUsuario={nomeUsuario}/>
+  
     </>
   )
   }
